@@ -7,13 +7,6 @@ Telegram-бот: конвертер валют.
 - если формат сообщения неправильный — вежливо просит повторить
 
 Курсы валют пока захардкожены (фиксированные числа).
-Это НОРМАЛЬНО для первой версии — потом можно подключить
-реальный курс через бесплатное API (например exchangerate-api.com).
-
-Как запустить:
-1. pip install python-telegram-bot
-2. Впиши свой токен в переменную BOT_TOKEN ниже
-3. python currency_bot.py
 """
 
 from telegram import Update
@@ -24,7 +17,6 @@ from telegram.ext import (
     ContextTypes,
     filters,
 )
-# Токен получаешь у @BotFather в Telegram после команды /newbot
 BOT_TOKEN = "8906074119:AAGRyjMBV1KzQZhrAOXo4nruHgWcG-RL7-E"
 
 # Захардкоженные курсы валют относительно USD.
