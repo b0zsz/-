@@ -17,17 +17,12 @@ from telegram.ext import (
     ContextTypes,
     filters,
 )
-<<<<<<< HEAD
 
 from dotenv import load_dotenv
 import os
 
 load_dotenv()  # читает файл .env и подгружает переменные
 BOT_TOKEN = os.getenv("BOT_TOKEN")  # достаёт значение по имени
-
-=======
-BOT_TOKEN = "8906074119:AAGRyjMBV1KzQZhrAOXo4nruHgWcG-RL7-E"
->>>>>>> 6778354553169ea84b9e591a644e62c64b5ceead
 
 # Захардкоженные курсы валют относительно USD.
 # Это словарь: ключ - код валюты, значение - сколько это в USD.
